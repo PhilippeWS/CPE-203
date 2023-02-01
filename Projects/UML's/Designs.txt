@@ -1,0 +1,26 @@
+Preface: After looking over eveerything, I felt it all had some logical place, whether it was sorted by paramters or by name or just by feeling. So I left nothing but the random generator in the functions class. I also removed any static tags from methods that could do so without forcing an instance creation in another class.
+-----------------------
+Entity: Set all the instance fields to private and created accessors and mutators even if they werent called. Then I moved all constants relating to entities into that class, and any method specifically having to do with specfic Entity activity.
+
+Action: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. I will add later if there is. For methods, anything to do with generic action creation or execution went into this class.
+
+Background: Set all the instance fields to private and created accessors and mutators even if they werent called. For methods, all that simply dealt with background components, not drawing the background went here.
+
+Event: Set all the instance fields to private and created accessors and mutators even if they werent called.
+
+EventComparator: --
+
+Event Scheduler: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. As for methods, anything dealing with event scheduling, removal, or creation. Nothing out of the ordinary.
+
+ImageStore: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. As for methods, I moved the ones I specifcaly believe should belong here that dealt with images. There are some other methods in other classes that dealt with the images, however I felt those were best kept there considering their properties.
+
+Point: Set all instance fields to private and created accessors but not mutators as the fields were final. As for methods, anything dealing with points and properties of them. Seemed self explanatory.
+
+Viewport: Set all the instance fields to private and created accessors and mutators even if they werent called. As for methods, anything that had to do with moving around the viewport or translators, such as viewportToWorld, etc.
+
+VirtualWorld: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. Added the PROPERTY_KEY constant as it seemed to be the only place calling for it. As for methods, this class dealt with parsing the command line and loading all objects where they should go. So I put all the parse and processing methods in here that made sense.
+
+WorldModel: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. As for methods, I felt the WorldModel class dealth with how the world was built and what was going to be in the world, as opposed to virtual world which simply processed it. So any generic creation of Entities in the world and wherever they're to exist methods were put here.
+
+WorldView: Set all instance fields private but did create add accessors or mutators as there were no uses for them at this moment. Added the coloring constants to this class as it seemed appropriate. As for methods, anything that had to do with creating the world for the user to see went here. Drawing the background, pulling up images, drawing the entites and viewport, processing the image lines, etc.
+Get current image and next image I debtate could MAYBE go into ImageStore, but WorldView is everything to do with the display so I felt possibly they are best here.

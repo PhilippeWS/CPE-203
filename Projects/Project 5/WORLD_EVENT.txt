@@ -1,0 +1,30 @@
+-Note: Please ensure to use the update imageList provided.
+
+1.) Names: Philippe Wylezek-Serrano
+	   Jeff Chong
+
+Responsiblities:
+Jeff: Ray classes and behaviors.
+
+Philippe: Mouse interaction, background updating, and affected entities.
+
+2.) Click anywhere on the grid to spawn a Sting Ray.
+
+3.) A Sting Ray will spawn and will come up from underneath the sand, revealing 9 sand tiles.
+
+4.) Crabs are the effected entity. They are removed when within reach of Sting Ray (RayNotFull).
+Updated crab activity: When a crab cuts a seagrass that has a sand tile background, a new Sting Ray 
+(RayNotFull) is spawned.
+Seagrass tile backgrounds are changed to sand tiles when within reach of a Sting Ray (RayFull).
+
+5.) The new entity is a StringRay and similar to the Octo, it has two states, RayNotFull & RayFull
+RayNotFull: Hunts a crab and eats it. It then transforms to a RayFull
+RayFull: Runs to a seagrass and is removed.
+(Refer to Question 4 for what happened to the crabs and seagrass)
+
+Image Sources: 
+Sand Tile: https://opengameart.org/content/sand-desert-dune-tile
+Ray Image: https://www.shutterstock.com/search/stingray+clipart
+
+NOTE: Depending on when the ray(s) are spawned into the world, the whole ecosystem of fish and crabs are affected. This may lead to no crabs spawning to cut the seagrass.
+The program will run indefinitely as fish keep spawning because no crabs exist to remove seagrass.

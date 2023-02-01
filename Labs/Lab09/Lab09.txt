@@ -1,0 +1,11 @@
+6.) The error appears because the exception, while thrown, has not been handled.
+
+7.) Created exceptions are by default checked exceptions. By making it a child of the RuntimeException, they are now unchecked exceptions, that are investigated at run time. We could also enclose the exceptions within a try catch block to handle the exception.
+
+9.) The print message will never output because an exception will be thrown before that line of code resolves, meaning the compiler will skip that line and move to the catch block in order to handle the exception.Circle is only printed when it has a valid radius. Finally is printed everytime, since it is in the finally block and is always executed. Done is also always printed since no line of code breaks the succession, such as a return statement or unhandled exception.
+
+13.) The exception is still thrown, appearing after the finally block, and is produced by the compiler with stack trace accompanying it. (Assuming no general exception catch block)
+
+14.) If done before the try catch block, the code crashes, the finally block does not execute at all, and an exception is thrown unhandled.
+
+15.) Finally is printed, but done is not printed since the return statement prevents it by interrupting the sequence.

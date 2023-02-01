@@ -1,0 +1,1 @@
+The octopus I have them path finding with their cardinal neighbors, since if they were allowed diagnol neighbors, they became a bit too fast, making it take a quite a long time to spawn a crab. This can be changed by going to the each of the respective classes (OctopusNotFull & OctopusFull) and changing their paramters in compute path.
